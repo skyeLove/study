@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box{
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            margin:150px auto;
+            transition:all 2s;
+        }
+
+        .box:hover{
+            transform:scale(1.5) rotate(1200deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
+
+<script>
+    var box=document.querySelector('.box');
+
+//    绑定 过渡结束的事件
+    box.addEventListener('transitionEnd',function(){
+        console.log('过渡结束触发...');
+        console.log('我是100行很复杂代码...');
+        console.log('我是100行很复杂代码...');
+        console.log('我是100行很复杂代码...');
+        console.log('我是100行很复杂代码...');
+        console.log('我是100行很复杂代码...');
+        console.log('我是100行很复杂代码...');
+        console.log('我是100行很复杂代码...');
+    });
+// 兼容webkit 内核
+    box.addEventListener('webkitTransitionEnd',function(){
+        console.log('过渡结束触发...');
+        console.log('我是100行很复杂代码...');
+        console.log('我是100行很复杂代码...');
+        console.log('我是100行很复杂代码...');
+        console.log('我是100行很复杂代码...');
+        console.log('我是100行很复杂代码...');
+        console.log('我是100行很复杂代码...');
+        console.log('我是100行很复杂代码...');
+    });
+
+//     为了代码优化 ，我希望  定义 帮我们绑定 过渡结束事件  方法
+//     只用调用这个方法，就可以帮我做兼容是的 过渡结束事件 绑定
+
+</script>

@@ -1,0 +1,60 @@
+
+/*初始化*/
+*,::before,::after {
+    padding:0;
+    margin:0;
+    /*内减模式*/
+    box-sizing:border-box;
+    /*兼容webkit内核*/
+    -webkit-box-sizing: border-box;
+    /*去除移动端点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+}
+/*comment 样式*/
+body {
+    font-size: 14px;
+    color:#333;
+    /*设置多个字体样式  后面的是备胎*/
+    font-family: "Microsoft YaHei", sans-serif;
+}
+input {
+    /*兼容写法*/
+    border:0 none;
+    outline: none;
+    /*去除在移动端表单在不同浏览器的默认不同效果*/
+    -webkit-appearance: none;
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float:right;
+}
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+a {
+    text-decoration: none;
+    color:#333;
+}
+ul,ol{
+    list-style: none;
+}
+.border-t {
+    border-top: 1px solid #ccc;
+}
+.border-l {
+    border-left: 1px solid #ccc;
+}
+.border-r {
+    border-right: 1px solid #ccc;
+}
+.border-b {
+    border-bottom: 1px solid #ccc;
+}

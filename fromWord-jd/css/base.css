@@ -1,0 +1,111 @@
+
+/* css css rest*/
+/*html,body,div,h1,h2,h3,h4,h5,h6,p,blockquote,pre,address,dl,dt,dd,ol,ul,li,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output ,section,time,mark,audio,video,progress{margin:0;padding:0; }*/
+
+*,::before,::after{
+    margin:0;
+    padding:0;
+
+    /*内减模式 */
+    box-sizing: border-box;
+    /* 兼容-webkit-内核*/
+    -webkit-box-sizing: border-box;
+    /*  ie: -ms-
+        chrome:-webkit
+        firefox: -moz-
+        opera:  -o-
+        safair: -webkit-
+    */
+    /* 去除移动端的点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+}
+
+body{
+    font-size:14px;
+    color:#333;
+    /* 设置多个字，后面的都是备胎*/
+    font-family: "Microsoft Yahei",sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:#333;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+input{
+    border:0 none;
+    outline: none;
+    /* 在移动端 去除表单 默认的效果*/
+    -webkit-appearance: none;
+}
+
+
+/* common css*/
+
+.pull-left{
+    float: left;
+}
+
+.pull-right{
+    float: right;
+}
+
+/**/
+.m-l10{
+    margin-left:10px;
+}
+
+.m-r10{
+    margin-right:10px;
+}
+
+.m-t10{
+    margin-top:10px;
+}
+
+.m-b10{
+    margin-bottom:10px;
+}
+
+.b-l{
+    border-left: 1px solid #ccc;
+}
+
+
+.b-r{
+    border-right: 1px solid #ccc;
+}
+
+
+.b-b{
+    border-bottom: 1px solid #ccc;
+}
+
+.b-t{
+    border-top: 1px solid #ccc;
+}
+/* 清除出浮动*/
+.clearfix::after,
+.clearfix::before{
+    content:"";
+    height:0;
+    visibility: hidden;
+    line-height: 0;
+    clear:both;
+    display: block;
+}
+
+
+a[class^='icon-'],span[class^='icon-']{
+    background:url(../images/sprites.png) no-repeat;
+    background-size: 200px 200px;
+}
+

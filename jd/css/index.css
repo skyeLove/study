@@ -1,0 +1,236 @@
+a[class^="icon-"],
+span[class^="icon-"] {
+  background: url("../images/sprites.png") no-repeat;
+  background-size: 200px 200px;
+}
+.jd-web {
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  background-color: #f5f5f5;
+  margin: 0 auto;
+}
+.jd-web .jd-header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.jd-web .jd-header .jd-header-in {
+  background-color: rgba(201, 21, 35, 0);
+  height: 40px;
+  padding: 0 50px 0 75px;
+  position: relative;
+  max-width: 640px;
+  min-width: 320px;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+}
+.jd-web .jd-header .jd-header-in .icon-logo {
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 60px;
+  height: 36px;
+  background-position: 0 -103px;
+}
+.jd-web .jd-header .jd-header-in .jd-search {
+  width: 100%;
+  height: 40px;
+  position: relative;
+}
+.jd-web .jd-header .jd-header-in .jd-search .search {
+  width: 100%;
+  height: 30px;
+  border-radius: 30px;
+  margin-top: 5px;
+  padding-left: 30px;
+}
+.jd-web .jd-header .jd-header-in .jd-search .icon-search {
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  background-position: -60px -109px;
+}
+.jd-web .jd-header .jd-header-in .jd-landing {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+}
+.jd-web .jd-scroll {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.jd-web .jd-scroll ul {
+  width: 1000%;
+  transform: translate(-10%);
+  -webkit-transform: translate(-10%);
+}
+.jd-web .jd-scroll ul li {
+  width: 10%;
+  float: left;
+}
+.jd-web .jd-scroll ul li img {
+  width: 100%;
+  display: block;
+}
+.jd-web .jd-scroll ol {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+}
+.jd-web .jd-scroll ol li {
+  width: 6px;
+  height: 6px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+.jd-web .jd-scroll ol .active {
+  background-color: #fff;
+}
+.jd-web .jd-nav {
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+.jd-web .jd-nav ul li {
+  width: 25%;
+  float: left;
+  text-align: center;
+  margin-top: 10px;
+}
+.jd-web .jd-nav ul li a img {
+  width: 40px;
+}
+.jd-web .jd-nav ul li a p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+.jd-web .js-product {
+  width: 100%;
+  padding: 10px;
+}
+.jd-web .js-product .box-product {
+  box-shadow: 0 0 10px #ccc;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.jd-web .js-product .box-product .jd-shop-title p {
+  line-height: 33px;
+  border-bottom: 1px solid #ccc;
+  padding-left: 20px;
+  position: relative;
+}
+.jd-web .js-product .box-product .jd-shop-title p::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: 3px;
+  height: 15px;
+  background-color: #d8505c;
+}
+.jd-web .js-product .jd-sk .jd-sk-title {
+  line-height: 33px;
+}
+.jd-web .js-product .jd-sk .jd-sk-title a {
+  margin-right: 10px;
+}
+.jd-web .js-product .jd-sk .jd-sk-title .jd-sk-clock {
+  width: 16px;
+  height: 20px;
+  display: inline-block;
+  background: url("../images/seckill-icon.png") no-repeat;
+  background-size: 16px 20px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.jd-web .js-product .jd-sk .jd-sk-title span:nth-child(2) {
+  color: #d8505c;
+  margin: 0 10px;
+}
+.jd-web .js-product .jd-sk .jd-sk-title .jd-sk-downtime {
+  display: inline-block;
+  margin-top: 10px;
+}
+.jd-web .js-product .jd-sk .jd-sk-title .jd-sk-downtime ul li {
+  float: left;
+  width: 15px;
+  height: 15px;
+  background-color: #000;
+  color: #fff;
+  margin-right: 4px;
+  text-align: center;
+  line-height: 15px;
+}
+.jd-web .js-product .jd-sk .jd-sk-title .jd-sk-downtime ul li:nth-child(3n) {
+  background-color: transparent;
+  width: 10px;
+  height: 15px;
+  color: #000;
+  margin-right: 2px;
+}
+.jd-web .js-product .jd-sk .jd-sk-content {
+  width: 100%;
+}
+.jd-web .js-product .jd-sk .jd-sk-content ul li:nth-child(2) a {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.jd-web .js-product .jd-sk .jd-sk-content ul li {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  padding: 10px 0;
+}
+.jd-web .js-product .jd-sk .jd-sk-content ul li a {
+  display: block;
+}
+.jd-web .js-product .jd-sk .jd-sk-content ul li a img {
+  width: 64%;
+}
+.jd-web .js-product .jd-sk .jd-sk-content ul li p {
+  font-size: 12px;
+}
+.jd-web .js-product .jd-sk .jd-sk-content ul li p:nth-child(2) {
+  color: #d8505c;
+}
+.jd-web .js-product .jd-sk .jd-sk-content ul li p:nth-child(3) {
+  text-decoration: line-through;
+}
+.jd-web .js-product .jd-shop-one {
+  width: 100%;
+}
+.jd-web .js-product .jd-shop-one .jd-shop-one-content {
+  width: 100%;
+}
+.jd-web .js-product .jd-shop-one .jd-shop-one-content a {
+  width: 50%;
+  display: block;
+}
+.jd-web .js-product .jd-shop-one .jd-shop-one-content a img {
+  width: 100%;
+  display: block;
+}
+.jd-web .js-product .jd-shop-two .jd-shop-two-content {
+  width: 100%;
+}
+.jd-web .js-product .jd-shop-two .jd-shop-two-content a {
+  width: 50%;
+  display: block;
+}
+.jd-web .js-product .jd-shop-two .jd-shop-two-content a img {
+  width: 100%;
+  display: block;
+}

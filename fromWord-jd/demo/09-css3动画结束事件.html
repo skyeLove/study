@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            animation: gun 2s;
+        }
+
+        @keyframes gun {
+            0%{
+                transform:translateX(0px);
+            }
+
+            100%{
+                transform:translateX(600px);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+</body>
+</html>
+
+<script>
+    var box=document.querySelector('.box');
+
+    box.addEventListener('animationEnd',function(){
+        console.log('动画结束了...');
+    })
+//兼容
+    box.addEventListener('webkitAnimationEnd',function(){
+        console.log('动画结束了...');
+    })
+</script>
